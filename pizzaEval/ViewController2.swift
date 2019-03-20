@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController2: UIViewController {
     var pizzaId = 0
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         let param: [String: Any] = ["pizzaId": pizzaId]
@@ -18,20 +19,13 @@ class ViewController2: UIViewController {
         request.httpMethod = "POST"
         let jsonData = try? JSONSerialization.data(withJSONObject: param, options: .prettyPrinted)
         request.httpBody = jsonData
-        print(jsonData)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
             guard let data = data else { return }
-            //print(String(data: data, encoding: .utf8)!)
-            //print(data)
-            do {
-                let jsonResponse = try JSONSerialization.jsonObject(with:
-                    data, options: []) as? [[String]]
-                
-                print(jsonResponse)
-            } catch let parsingError {
-                print("Error", parsingError)
+            DispatchQueue.main.async{
+                self.label.text = (String(data: data, encoding: .utf8)!)
+
             }
         }
         task.resume()
