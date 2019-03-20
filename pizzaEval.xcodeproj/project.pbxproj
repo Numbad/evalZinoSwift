@@ -14,6 +14,7 @@
 		2D21C65D224174EE00A045E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D21C65B224174EE00A045E5 /* LaunchScreen.storyboard */; };
 		2D21C668224174EE00A045E5 /* pizzaEvalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D21C667224174EE00A045E5 /* pizzaEvalTests.swift */; };
 		2D21C673224174EE00A045E5 /* pizzaEvalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D21C672224174EE00A045E5 /* pizzaEvalUITests.swift */; };
+		2D21C6812241DED400A045E5 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D21C6802241DED400A045E5 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2D21C66E224174EE00A045E5 /* pizzaEvalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pizzaEvalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D21C672224174EE00A045E5 /* pizzaEvalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pizzaEvalUITests.swift; sourceTree = "<group>"; };
 		2D21C674224174EE00A045E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D21C6802241DED400A045E5 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				2D21C659224174EE00A045E5 /* Assets.xcassets */,
 				2D21C65B224174EE00A045E5 /* LaunchScreen.storyboard */,
 				2D21C65E224174EE00A045E5 /* Info.plist */,
+				2D21C6802241DED400A045E5 /* ViewController2.swift */,
 			);
 			path = pizzaEval;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				2D21C655224174EC00A045E5 /* ViewController.swift in Sources */,
 				2D21C653224174EC00A045E5 /* AppDelegate.swift in Sources */,
+				2D21C6812241DED400A045E5 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
